@@ -14,8 +14,8 @@
     <meta name="author" content="okler.net">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -25,34 +25,34 @@
         type="text/css">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="vendor/animate/animate.min.css">
-    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.min.css">
-    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css">
+    <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/vendor/animate/animate.min.css">
+    <link rel="stylesheet" href="/vendor/simple-line-icons/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="/vendor/owl.carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/vendor/owl.carousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/vendor/magnific-popup/magnific-popup.min.css">
 
     <!-- Theme CSS -->
-    <link rel="stylesheet" href="css/theme.css">
-    <link rel="stylesheet" href="css/theme-elements.css">
-    <link rel="stylesheet" href="css/theme-blog.css">
-    <link rel="stylesheet" href="css/theme-shop.css">
+    <link rel="stylesheet" href="/css/theme.css">
+    <link rel="stylesheet" href="/css/theme-elements.css">
+    <link rel="stylesheet" href="/css/theme-blog.css">
+    <link rel="stylesheet" href="/css/theme-shop.css">
 
     <!-- Current Page CSS -->
-    <link rel="stylesheet" href="vendor/rs-plugin/css/settings.css">
-    <link rel="stylesheet" href="vendor/rs-plugin/css/layers.css">
-    <link rel="stylesheet" href="vendor/rs-plugin/css/navigation.css">
-    <link rel="stylesheet" href="vendor/circle-flip-slideshow/css/component.css">
+    <link rel="stylesheet" href="/vendor/rs-plugin/css/settings.css">
+    <link rel="stylesheet" href="/vendor/rs-plugin/css/layers.css">
+    <link rel="stylesheet" href="/vendor/rs-plugin/css/navigation.css">
+    <link rel="stylesheet" href="/vendor/circle-flip-slideshow/css/component.css">
 
     <!-- Skin CSS -->
-    <link rel="stylesheet" href="css/skins/default.css">
+    <link rel="stylesheet" href="/css/skins/default.css">
 
     <!-- Theme Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="/css/custom.css">
 
     <!-- Head Libs -->
-    <script src="vendor/modernizr/modernizr.min.js"></script>
+    <script src="/vendor/modernizr/modernizr.min.js"></script>
 
 </head>
 
@@ -66,7 +66,7 @@
                             <div class="header-logo">
                                 <a href="index.html">
                                     <img alt="Porto" width="111" height="54" data-sticky-width="82" data-sticky-height="40"
-                                        data-sticky-top="33" src="img/logo.png">
+                                        data-sticky-top="33" src="/img/logo.png">
                                 </a>
                             </div>
                         </div>
@@ -126,50 +126,50 @@
                                                         <li class="dropdown-submenu">
                                                             <a href="index-classic.html">Classic</a>
                                                             <ul class="dropdown-menu">
-                                                                <li><a href="index-classic.html" data-thumb-preview="img/previews/preview-classic.jpg">Classic
+                                                                <li><a href="index-classic.html" data-thumb-preview="/img/previews/preview-classic.jpg">Classic
                                                                         - Original</a></li>
                                                                 <li><a href="index-classic-color.html"
-                                                                        data-thumb-preview="img/previews/preview-classic-color.jpg">Classic
+                                                                        data-thumb-preview="/img/previews/preview-classic-color.jpg">Classic
                                                                         - Color</a></li>
                                                                 <li><a href="index-classic-light.html"
-                                                                        data-thumb-preview="img/previews/preview-classic-light.jpg">Classic
+                                                                        data-thumb-preview="/img/previews/preview-classic-light.jpg">Classic
                                                                         - Light</a></li>
                                                                 <li><a href="index-classic-video.html"
-                                                                        data-thumb-preview="img/previews/preview-classic-video.jpg">Classic
+                                                                        data-thumb-preview="/img/previews/preview-classic-video.jpg">Classic
                                                                         - Video</a></li>
                                                                 <li><a href="index-classic-video-light.html"
-                                                                        data-thumb-preview="img/previews/preview-classic-video-light.jpg">Classic
+                                                                        data-thumb-preview="/img/previews/preview-classic-video-light.jpg">Classic
                                                                         - Video - Light</a></li>
                                                             </ul>
                                                         </li>
                                                         <li class="dropdown-submenu">
                                                             <a href="index-corporate.html">Corporate <span class="tip tip-dark">hot</span></a>
                                                             <ul class="dropdown-menu">
-                                                                <li><a href="index-corporate.html" data-thumb-preview="img/previews/preview-corporate.jpg">Corporate
+                                                                <li><a href="index-corporate.html" data-thumb-preview="/img/previews/preview-corporate.jpg">Corporate
                                                                         - Version 1</a></li>
-                                                                <li><a href="index-corporate-2.html" data-thumb-preview="img/previews/preview-corporate-version2.jpg">Corporate
+                                                                <li><a href="index-corporate-2.html" data-thumb-preview="/img/previews/preview-corporate-version2.jpg">Corporate
                                                                         - Version 2</a></li>
-                                                                <li><a href="index-corporate-3.html" data-thumb-preview="img/previews/preview-corporate-version3.jpg">Corporate
+                                                                <li><a href="index-corporate-3.html" data-thumb-preview="/img/previews/preview-corporate-version3.jpg">Corporate
                                                                         - Version 3</a></li>
-                                                                <li><a href="index-corporate-4.html" data-thumb-preview="img/previews/preview-corporate-version4.jpg">Corporate
+                                                                <li><a href="index-corporate-4.html" data-thumb-preview="/img/previews/preview-corporate-version4.jpg">Corporate
                                                                         - Version 4</a></li>
-                                                                <li><a href="index-corporate-5.html" data-thumb-preview="img/previews/preview-corporate-version5.jpg">Corporate
+                                                                <li><a href="index-corporate-5.html" data-thumb-preview="/img/previews/preview-corporate-version5.jpg">Corporate
                                                                         - Version 5</a></li>
-                                                                <li><a href="index-corporate-6.html" data-thumb-preview="img/previews/preview-corporate-version6.jpg">Corporate
+                                                                <li><a href="index-corporate-6.html" data-thumb-preview="/img/previews/preview-corporate-version6.jpg">Corporate
                                                                         - Version 6</a></li>
-                                                                <li><a href="index-corporate-7.html" data-thumb-preview="img/previews/preview-corporate-version7.jpg">Corporate
+                                                                <li><a href="index-corporate-7.html" data-thumb-preview="/img/previews/preview-corporate-version7.jpg">Corporate
                                                                         - Version 7</a></li>
-                                                                <li><a href="index-corporate-8.html" data-thumb-preview="img/previews/preview-corporate-version8.jpg">Corporate
+                                                                <li><a href="index-corporate-8.html" data-thumb-preview="/img/previews/preview-corporate-version8.jpg">Corporate
                                                                         - Version 8</a></li>
                                                                 <li><a href="index-corporate-hosting.html"
-                                                                        data-thumb-preview="img/previews/preview-corporate-hosting.jpg">Corporate
+                                                                        data-thumb-preview="/img/previews/preview-corporate-hosting.jpg">Corporate
                                                                         - Hosting</a></li>
                                                             </ul>
                                                         </li>
                                                         <li class="dropdown-submenu">
                                                             <a href="#">One Page</a>
                                                             <ul class="dropdown-menu">
-                                                                <li><a href="index-one-page.html" data-thumb-preview="img/previews/preview-one-page.jpg">One
+                                                                <li><a href="index-one-page.html" data-thumb-preview="/img/previews/preview-one-page.jpg">One
                                                                         Page Original</a></li>
                                                             </ul>
                                                         </li>
@@ -700,7 +700,7 @@
                     <div class="row">
                         <div class="col-md-1">
                             <a href="index.html" class="logo">
-                                <img alt="Porto Website Template" class="img-responsive" src="img/logo-footer.png">
+                                <img alt="Porto Website Template" class="img-responsive" src="/img/logo-footer.png">
                             </a>
                         </div>
                         <div class="col-md-7">
@@ -722,35 +722,35 @@
     </div>
 
     <!-- Vendor -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/jquery.appear/jquery.appear.min.js"></script>
-    <script src="vendor/jquery.easing/jquery.easing.min.js"></script>
-    <script src="vendor/jquery-cookie/jquery-cookie.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="vendor/common/common.min.js"></script>
-    <script src="vendor/jquery.validation/jquery.validation.min.js"></script>
-    <script src="vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
-    <script src="vendor/jquery.gmap/jquery.gmap.min.js"></script>
-    <script src="vendor/jquery.lazyload/jquery.lazyload.min.js"></script>
-    <script src="vendor/isotope/jquery.isotope.min.js"></script>
-    <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="vendor/vide/vide.min.js"></script>
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/jquery.appear/jquery.appear.min.js"></script>
+    <script src="/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="/vendor/jquery-cookie/jquery-cookie.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/vendor/common/common.min.js"></script>
+    <script src="/vendor/jquery.validation/jquery.validation.min.js"></script>
+    <script src="/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+    <script src="/vendor/jquery.gmap/jquery.gmap.min.js"></script>
+    <script src="/vendor/jquery.lazyload/jquery.lazyload.min.js"></script>
+    <script src="/vendor/isotope/jquery.isotope.min.js"></script>
+    <script src="/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="/vendor/vide/vide.min.js"></script>
     
     <!-- Theme Base, Components and Settings -->
-    <script src="js/theme.js"></script>
+    <script src="/js/theme.js"></script>
     
     <!-- Current Page Vendor and Views -->
-    <script src="vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-    <script src="vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-    <script src="vendor/circle-flip-slideshow/js/jquery.flipshow.min.js"></script>
-    <script src="js/views/view.home.js"></script>
+    <script src="/vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script src="/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="/vendor/circle-flip-slideshow/js/jquery.flipshow.min.js"></script>
+    <script src="/js/views/view.home.js"></script>
     
     <!-- Theme Custom -->
-    <script src="js/custom.js"></script>
+    <script src="/js/custom.js"></script>
     
     <!-- Theme Initialization Files -->
-    <script src="js/theme.init.js"></script>
+    <script src="/js/theme.init.js"></script>
 
     <!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information.
     <script>
