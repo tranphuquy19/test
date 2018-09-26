@@ -621,11 +621,11 @@
                                                 </li>
                                                 <li class="dropdown">
                                                     <a class="dropdown-toggle" href="#">
-                                                        Contact Us
+                                                        Account
                                                     </a>
                                                     <ul class="dropdown-menu">
-                                                        <li><a href="contact-us.html">Contact Us - Basic</a></li>
-                                                        <li><a href="contact-us-advanced.php">Contact Us - Advanced</a></li>
+                                                        <li><a href="/login">Login</a></li>
+                                                        <li><a href="/register">Register</a></li>
                                                     </ul>
                                                 </li>
                                             </ul>
