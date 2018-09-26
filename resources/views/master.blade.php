@@ -626,6 +626,7 @@
                                                     <ul class="dropdown-menu">
                                                         <li><a href="/login">Login</a></li>
                                                         <li><a href="/register">Register</a></li>
+                                                        <li><a href="/password/reset">Reset Password</a></li>
                                                     </ul>
                                                 </li>
                                             </ul>
