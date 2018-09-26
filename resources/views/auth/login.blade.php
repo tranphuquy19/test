@@ -25,7 +25,7 @@
                             <div class="row">
                                 <div class="form-group">
                                     <div class="col-md-12">
-                                        <a class="pull-right" href={{ old('remember') ? 'checked' : '' }}>(Lost Password?)</a>
+                                        <a class="pull-right" href="password/reset">(Lost Password?)</a>
                                         <label>Password</label>
                                         <input type="password" type="password" value="" class="form-control input-lg{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
                                         
