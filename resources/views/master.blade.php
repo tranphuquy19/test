@@ -638,7 +638,10 @@
                 </div>
             </div>
         </header>
-
+        <div role="main" class="main">
+            @yield('content')
+        </div>
+        
         <footer id="footer">
             <div class="container">
                 <div class="row">

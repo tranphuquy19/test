@@ -1,9 +1,77 @@
-@extends('layouts.app')
+@extends('master')
 
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+            <div class="col-sm-6">
+                    <div class="featured-box featured-box-primary align-left mt-xlg">
+                        <div class="box-content">
+                            <h4 class="heading-primary text-uppercase mb-md">Register An Account</h4>
+                            <form action="{{ route('register') }}" id="frmSignUp" method="post">
+                                @csrf
+                                <div class="row">
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <label>Name</label>
+                                            <input id="name" type="text" value="" class="form-control input-lg{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
+                                            
+                                            @if ($errors->has('name'))
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $errors->first('name') }}</strong>
+                                                </span>
+                                            @endif
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label>E-mail Address</label>
+                                            <input id="email" type="text" value="" class="form-control input-lg{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
+                                            
+                                            @if ($errors->has('email'))
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $errors->first('email') }}</strong>
+                                            </span>
+                                        @endif                                        
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <div class="col-md-6">
+                                            <label>Password</label>
+                                            <input id="password" type="password" value="" class="form-control input-lg{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+
+                                            @if ($errors->has('password'))
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $errors->first('password') }}</strong>
+                                            </span>
+                                            @endif                                        
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label>Re-enter Password</label>
+                                            <input id="password-confirm" type="password" value="" class="form-control input-lg" name="password_confirmation" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <input type="submit" value="Register" class="btn btn-primary pull-right mb-xl" data-loading-text="Loading...">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+        {{-- <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Register') }}</div>
 
@@ -73,5 +141,5 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 @endsection
