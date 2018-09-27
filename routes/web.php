@@ -24,3 +24,6 @@ Route::get('/logout', function(){
 Route::get('/testview', function(){
     return view('master');
 });
+Route::get('/test', function(){
+    
+});
