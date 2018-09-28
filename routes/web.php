@@ -24,6 +24,18 @@ Route::get('/logout', function(){
 Route::get('/testview', function(){
     return view('master');
 });
-Route::get('/test', function(){
+Route::group(['prefix' => 'test'], function () {
+    Route::get('create', function(){
     
+    });
+    Route::get('read', function(){
+        
+    });
+    Route::get('update', function () {
+        
+    });
+    Route::get('delete', function(){
+        
+    });
 });
+
