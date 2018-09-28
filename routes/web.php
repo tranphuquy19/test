@@ -31,6 +31,9 @@ Route::group(['prefix' => 'test'], function () {
     Route::get('read/{id}', function(){
 
     });
+    Route::get('read/{id}/test', function(){
+
+    });
     Route::get('update/{id}', function () {
         
     });
