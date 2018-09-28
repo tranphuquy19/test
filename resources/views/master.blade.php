@@ -619,16 +619,7 @@
                                                         </li>
                                                     </ul>
                                                 </li>
-                                                <li class="dropdown">
-                                                    <a class="dropdown-toggle" href="#">
-                                                        Account
-                                                    </a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a href="/login">Login</a></li>
-                                                        <li><a href="/register">Register</a></li>
-                                                        <li><a href="/password/reset">Reset Password</a></li>
-                                                    </ul>
-                                                </li>
+                                                @yield('account')
                                             </ul>
                                         </nav>
                                     </div>
@@ -640,7 +631,8 @@
             </div>
         </header>
         <div role="main" class="main">
-            @yield('content')
+                <div class="container">@yield('content')</div>
+            
         </div>
         
         <footer id="footer">

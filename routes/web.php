@@ -1,5 +1,7 @@
 <?php
 use App\Http\Controllers\Auth\LoginController;
+use App\Test;
+use App\Categories;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,7 +14,7 @@ use App\Http\Controllers\Auth\LoginController;
  */
 
 Route::get('/', function () {
-    return view('layouts.home');
+    return redirect()->route('home');
 });
 
 Auth::routes();
@@ -23,6 +25,20 @@ Route::get('/logout', function () {
 });
 Route::get('/testview', function () {
     return view('master');
+});
+Route::get('/test', function(){
+        $tableTestdb = Test::join('categories', 'id_categories', '=', 'categories.id')->select('test.*', 'categories.title as categories')->getQuery()->get();
+        $tableTest = array();
+        foreach ($tableTestdb as $key) {
+           array_push($tableTest, array(
+            'id_categories' => $key->id_categories,
+            'categories'=> $key->categories,
+            'id' => $key->id,
+            'title_test' => $key->title,
+            'image_test' => $key->image
+        ));
+        }
+        var_dump($tableTest);
 });
 Route::group(['prefix' => 'test'], function () {
     Route::get('create', function(){

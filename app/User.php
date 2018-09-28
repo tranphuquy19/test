@@ -15,6 +15,14 @@ class User extends Authenticatable
      *
      * @var array
      */
+    protected $table = 'users';
+    public function auth_test(){
+        return $this->hasMany('App\Test', 'auth', 'id');
+    }
+    public function auth_results(){
+        return $this->hasMany('App\Results', 'auth', 'id');
+    }
+    
     protected $fillable = [
         'name', 'email', 'password',
     ];
