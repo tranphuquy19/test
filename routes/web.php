@@ -28,13 +28,13 @@ Route::group(['prefix' => 'test'], function () {
     Route::get('create', function(){
     
     });
-    Route::get('read', function(){
+    Route::get('read/{id}', function(){
+
+    });
+    Route::get('update/{id}', function () {
         
     });
-    Route::get('update', function () {
-        
-    });
-    Route::get('delete', function(){
+    Route::get('delete/{id}', function(){
         
     });
 });
