@@ -17,7 +17,7 @@
             @foreach ($tableTest as $item)
 			<li class="col-md-1-5 isotope-item {{$item['id_categories']}}">
 				<div class="portfolio-item">
-					<a href="portfolio-single-small-slider.html">
+				<a href="/test/{{$item['id']}}">
 						<span class="thumb-info thumb-info-lighten thumb-info-bottom-info thumb-info-centered-icons">
 			<span class="thumb-info-wrapper">
 			<img src="/{{$item['image_test']}}" class="img-responsive" alt="">
