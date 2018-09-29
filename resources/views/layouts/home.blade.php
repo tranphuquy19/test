@@ -2,7 +2,7 @@
 @section('account')
 	@if ($logged == false)
 		<li class="dropdown dropdown-mega dropdown-mega-signin signin" id="headerAccount">
-	<a class="dropdown-toggle" href="page-login.html">
+	<a class="dropdown-toggle" href="/login">
 		<i class="fa fa-user"></i> Sign In
 	</a>
 	<ul class="dropdown-menu">
