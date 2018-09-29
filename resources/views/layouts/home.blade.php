@@ -133,7 +133,7 @@
 		</li>
 	@endif
 @endsection
-@section('content')
+@section('content')  
 <h2>All test</h2>
 <ul class="nav nav-pills sort-source" data-sort-id="portfolio" data-option-key="filter" data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
     
