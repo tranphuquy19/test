@@ -65,33 +65,56 @@
 						<div class="signup-form">
 							<span class="dropdown-mega-sub-title">Create Account</span>
 
-							<form action="/" id="frmSignUp" method="post">
-								<div class="row">
-									<div class="form-group">
-										<div class="col-md-12 p-none">
-											<label>E-mail Address</label>
-											<input type="text" value="" class="form-control input-lg">
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="form-group">
-										<div class="col-md-6 pl-none">
-											<label>Password</label>
-											<input type="password" value="" class="form-control input-lg">
-										</div>
-										<div class="col-md-6 pr-none">
-											<label>Re-enter Password</label>
-											<input type="password" value="" class="form-control input-lg">
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12 p-none">
-										<input type="submit" value="Create Account" class="btn btn-primary pull-right mb-xl" data-loading-text="Loading...">
-									</div>
-								</div>
-							</form>
+							<form action="{{ route('register') }}" id="frmSignUp" method="post">
+                                @csrf
+                                <div class="row">
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <label>Name</label>
+                                            <input id="name" type="text" value="" class="form-control input-lg{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
+                                            
+                                            @if ($errors->has('name'))
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $errors->first('name') }}</strong>
+                                                </span>
+                                            @endif
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label>E-mail Address</label>
+                                            <input id="email" type="text" value="" class="form-control input-lg{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
+                                            
+                                            @if ($errors->has('email'))
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $errors->first('email') }}</strong>
+                                            </span>
+                                        @endif                                        
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <div class="col-md-6">
+                                            <label>Password</label>
+                                            <input id="password" type="password" value="" class="form-control input-lg{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+
+                                            @if ($errors->has('password'))
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $errors->first('password') }}</strong>
+                                            </span>
+                                            @endif                                        
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label>Re-enter Password</label>
+                                            <input id="password-confirm" type="password" value="" class="form-control input-lg" name="password_confirmation" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <input type="submit" value="Register" class="btn btn-primary pull-right mb-xl" data-loading-text="Loading...">
+                                    </div>
+                                </div>
+                            </form>
 
 							<p class="log-in-info">Already have an account? <a href="#" id="headerSignIn" class="p-none m-none ml-xs">Log In</a></p>
 						</div>
@@ -100,18 +123,26 @@
 							<span class="dropdown-mega-sub-title">Reset My Password</span>
 							<p>Complete the form below to receive an email with the authorization code needed to reset your password.</p>
 
-							<form action="/" id="frmResetPassword" method="post">
+							<form action="{{ route('password.update') }}" id="frmResetPwd" method="post">
+								@csrf
+	
 								<div class="row">
 									<div class="form-group">
-										<div class="col-md-12 p-none">
-											<label>E-mail Address</label>
-											<input type="text" value="" class="form-control input-lg">
+										<div class="col-md-12">
+											<label>Your Email</label>
+												<input id="email2" type="text" value="" class="form-control input-lg{{ $errors->has('email2') ? ' is-invalid' : '' }}" name="email2" value="{{ $email ?? old('email2') }}" required autofocus>
+												@if ($errors->has('email2'))
+													<span class="invalid-feedback" role="alert">
+														<strong>{{ $errors->first('email2') }}</strong>
+													</span>
+												@endif                                        
 										</div>
 									</div>
 								</div>
+								
 								<div class="row">
-									<div class="col-md-12 p-none">
-										<input type="submit" value="Submit" class="btn btn-primary pull-right mb-xl" data-loading-text="Loading...">
+									<div class="col-md-6">
+										<input type="submit" value="Send Password" class="btn btn-primary pull-right mb-xl" data-loading-text="Loading...">
 									</div>
 								</div>
 							</form>
