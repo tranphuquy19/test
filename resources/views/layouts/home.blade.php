@@ -138,7 +138,7 @@
 <ul class="nav nav-pills sort-source" data-sort-id="portfolio" data-option-key="filter" data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
     
 	<li data-option-value="*" class="active"><a href="#">Show All</a></li>
-	@foreach ($tableCategories as $item)
+	@foreach ($tableCategories as $item) 
 	<li data-option-value=".{{$item['id_categories']}}"><a href="#">{{$item['categories']}}</a></li>
 	@endforeach
 </ul>
