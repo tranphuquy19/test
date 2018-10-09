@@ -14,7 +14,7 @@ class CreateMasterConfigTable extends Migration
     public function up()
     {
         Schema::table('master_config', function (Blueprint $table) {
-            $table->increment('id');
+            $table->increments('id');
             $table->string('title_page');
             $table->string('phone_number');
             $table->string('fb_page');
