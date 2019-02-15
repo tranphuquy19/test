@@ -13,25 +13,29 @@ class CategoriesTableSeeder extends Seeder
     {
         DB::table('categories')->insert([
             [
-            'title' => 'Toán',
-            'image' => 'img/projects/project.jpg'
+                'title' => 'Tiếng Nhật',
+                'image' => 'img/projects/project.jpg'
             ],
             [
-            'title' => 'Văn',
-            'image' => 'img/projects/project.jpg'
+                'title' => 'JLPT',
+                'image' => 'img/projects/project.jpg'
             ],
             [
-            'title' => 'Anh',
-            'image' => 'img/projects/project.jpg'
+                'title' => 'Homework',
+                'image' => 'img/projects/project.jpg'
             ],
             [
-            'title' => 'Sử',
-            'image' => 'img/projects/project.jpg'
-            ],       
+                'title' => 'Mini Test',
+                'image' => 'img/projects/project.jpg'
+            ],
             [
-            'title' => 'Địa',
-            'image' => 'img/projects/project.jpg'
-            ] 
+                'title' => 'Midle-term Test',
+                'image' => 'img/projects/project.jpg'
+            ],
+            [
+                'title' => 'End-term Test',
+                'image' => 'img/projects/project.jpg'
+            ]
         ]);
     }
 }

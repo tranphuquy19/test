@@ -30,8 +30,9 @@ class HomeController extends Controller
         }
         return $tableTest;
     }
+    
     public static function getCategories(){
-        $tableCategoriesdb = Categories::all();
+        $tableCategoriesdb = Categories::orderBy('updated_at', 'DESC')->take(25)->get();
         $tableCategories = array();
         foreach ($tableCategoriesdb as $key) {
             array_push($tableCategories, array(
