@@ -16,13 +16,21 @@ class User extends Authenticatable
      * @var array
      */
     protected $table = 'users';
+    const ADMIN_TYPE = 1;
+    const NORMAL_USER_TYPE = 2;
+
     public function auth_test(){
         return $this->hasMany('App\Test', 'auth', 'id');
     }
+
     public function auth_results(){
         return $this->hasMany('App\Results', 'auth', 'id');
     }
     
+    public function isAdmin(){
+        return $this->role === self::ADMIN_TYPE;
+    }
+
     protected $fillable = [
         'name', 'email', 'password',
     ];
