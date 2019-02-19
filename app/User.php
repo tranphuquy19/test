@@ -16,7 +16,8 @@ class User extends Authenticatable
      * @var array
      */
     protected $table = 'users';
-    const ADMIN_TYPE = 1;
+    
+    const ADMIN_TYPE = 1; //1 is admin...
     const NORMAL_USER_TYPE = 2;
 
     public function auth_test(){
